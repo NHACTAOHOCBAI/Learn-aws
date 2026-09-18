@@ -17,3 +17,9 @@ variable "ec2_security_group_ids" {
   type        = list(string)
   description = "List of Security Group IDs"
 }
+
+variable "subnet_id" {
+  type        = string
+  description = "Subnet ID where the EC2 instance will be deployed"
+}
+

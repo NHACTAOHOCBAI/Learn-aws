@@ -1,6 +1,8 @@
 resource "aws_security_group" "udemy-security-group" {
   name        = "udemy-security-group"
   description = "Allow SSH and HTTP access"
+  vpc_id      = var.vpc_id
+
 
   ingress {
     from_port   = 22

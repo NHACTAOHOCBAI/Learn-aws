@@ -1,1 +1,5 @@
-# No input variables required for security module at this time
+variable "vpc_id" {
+  type        = string
+  description = "VPC ID where the security group will be created"
+}
+
